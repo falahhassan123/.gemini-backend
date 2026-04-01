@@ -2,7 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 export default async function handler(req, res) {
     // تأكد من وضع مفتاح Gemini الخاص بك هنا
-    const genAI = new GoogleGenerativeAI("YOUR_GEMINI_API_KEY");
+    const genAI = new GoogleGenerativeAI("AIzaSyDFrmWHYQ9fKK3APupRt4fILlyB8k8kK-8");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     if (req.method !== 'POST') {

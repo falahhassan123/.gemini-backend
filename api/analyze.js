@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: '10mb' })); // لدعم إرسال الصور �
 // المحرك الرئيسي للتحليل
 app.post('/analyze', async (req, res) => {
     // قراءة المفتاح من متغيرات البيئة في Render (أو استخدامه مباشرة إذا لم يوجد)
-    const apiKey = process.env.GEMINI_API_KEY || "AIzaSyDbELLaz0WkAuIqZGUmcg2pSVghfTAAgmk";
+    const apiKey = process.env.GEMINI_API_KEY || "AIzaSyCCdRhtvnbdE3ExlOQ8L6Sdtey4UHLekpc";
     
     try {
         const genAI = new GoogleGenerativeAI(apiKey);
